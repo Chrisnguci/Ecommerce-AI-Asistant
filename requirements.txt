@@ -1,0 +1,15 @@
+gradio==5.17.1
+huggingface-hub==0.29.1
+openai==1.63.2
+python-dotenv==1.0.1
+requests==2.32.3
+
+
+
+
+
+
+
+
+
+
