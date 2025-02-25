@@ -76,8 +76,8 @@ def chat(message, history):
 		message = response.choices[0].message
 		response, city = handle_tool_call(message)
 		messages.append(message)
-		messages.append(repsonse)
-		response = openai.chat.completions.create(model = MODEL, messages = messages)
+		messages.append(response)
+		response = deepseek_client.chat.completions.create(model = MODEL, messages = messages)
 	try:
 		return response.choices[0].message.content
 	except Exception as e:
