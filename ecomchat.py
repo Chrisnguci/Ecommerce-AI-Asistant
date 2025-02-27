@@ -65,7 +65,7 @@ def handle_tool_call(message):
 	info = get_policy(policy),
 	response = {
 		"role": "tool",
-		"content": json.dumps({"policy":policy,"information": info}),
+		" content": json.dumps({"policy":policy,"information": info}),
 		"tool_call_id": tool_call.id
 	}
 	return response, policy
